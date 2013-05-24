@@ -1,0 +1,8 @@
+
+BASEDIR=`dirname $0`
+
+mkdir -p $BASEDIR/Superuser/prebuilt
+
+curl -o $BASEDIR/Superuser/prebuilt/superuser.zip -L http://download.clockworkmod.com/superuser/superuser.zip
+unzip -o -d $BASEDIR/Superuser/prebuilt $BASEDIR/Superuser/prebuilt/superuser.zip armeabi/su x86/su Superuser.apk
+
