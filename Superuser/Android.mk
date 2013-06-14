@@ -16,7 +16,8 @@ LOCAL_PATH:= $(call my-dir)
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := Superuser
+LOCAL_MODULE := Superuser_koush_prebuilt
+LOCAL_MODULE_STEM := Superuser
 LOCAL_SRC_FILES := prebuilt/Superuser.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := .apk
@@ -27,7 +28,8 @@ include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := su
+LOCAL_MODULE := su_koush_prebuilt
+LOCAL_MODULE_STEM := su
 ifeq ($(TARGET_ARCH),arm)
     LOCAL_SRC_FILES := prebuilt/armeabi/su
 endif
